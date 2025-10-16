@@ -5,5 +5,7 @@ namespace ConsumirDeezer.Domain.Repositories.Services
     public interface IDeezerService
     {
         Task<ArtistSearchResponseDto> SearchArtistByNameAsync(string artistName);
+
+        Task<TracklistResponseDto> GetArtistTopTracksAsync(long artistId);
     }
 }

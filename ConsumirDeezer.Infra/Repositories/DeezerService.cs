@@ -12,12 +12,17 @@ namespace ConsumirDeezer.Infra.Repositories
             _httpClient=httpClient;
         }
 
+        public async Task<TracklistResponseDto> GetArtistTopTracksAsync(long artistId)
+        {
+            var requestUri = $"artist/{artistId}/top?limit=3";
+            var response = await _httpClient.GetFromJsonAsync<TracklistResponseDto>(requestUri);
+            return response ?? new TracklistResponseDto();
+        }
+
         public async Task<ArtistSearchResponseDto> SearchArtistByNameAsync(string artistName)
         {
             var requestUri = $"search/artist?q={artistName}";
-
             var response = await _httpClient.GetFromJsonAsync<ArtistSearchResponseDto>(requestUri);
-
             return response ?? new ArtistSearchResponseDto();
         }
     }
