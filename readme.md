@@ -11,13 +11,15 @@ Este projeto consome dados da **API Simples (Open API) do Deezer**, conforme doc
 * Não é necessário um *token* de autenticação OAuth para os endpoints de busca e top tracks utilizados.
 * **Importante:** A contagem de reproduções (*streams*) por faixa **não é fornecida** pela API Simples para faixas individuais.
 
+O projeto completo é composto por este Backend (ASP.NET Core) e o Frontend em Angular, disponível em:
+[ConsumirDeezer.UI (Angular)](https://github.com/marcelogmoura/ConsumirDeezer.UI)
 
 ## 🚀 Tecnologias Utilizadas
 
 | Categoria | Tecnologia | Versão |
 | :--- | :--- | :--- |
 | Framework | ASP.NET Core | 8.0 |
-| Linguagem | C# |  |
+| Linguagem | C# | 12 |
 | Arquitetura | Domain/Infrastructure/API | Clean Separation |
 | API Externa | Deezer API | Integração via HttpClient |
 | DI/Config | Dependency Injection, CORS | Configuração em Program.cs |
