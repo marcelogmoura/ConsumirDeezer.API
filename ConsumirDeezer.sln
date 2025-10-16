@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumirDeezer.API", "ConsumirDeezer.API\ConsumirDeezer.API.csproj", "{23217C52-96BC-4CD3-ADFA-412DD2D30745}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. APPLICATION", "1. APPLICATION", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. DOMAIN", "2. DOMAIN", "{71B39C6D-941C-4D9C-B0E7-D7B92E5F4FA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. INFRA", "3. INFRA", "{80FBEEE5-65B5-471D-BA3B-B394C1D4A7C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumirDeezer.Domain", "ConsumirDeezer.Domain\ConsumirDeezer.Domain.csproj", "{AAAF9CD3-62BD-4B7F-AA6D-4E984D7E877B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumirDeezer.Infra", "ConsumirDeezer.Infra\ConsumirDeezer.Infra.csproj", "{901F3991-72D0-4728-AD6B-8A13CBF01006}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23217C52-96BC-4CD3-ADFA-412DD2D30745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23217C52-96BC-4CD3-ADFA-412DD2D30745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23217C52-96BC-4CD3-ADFA-412DD2D30745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23217C52-96BC-4CD3-ADFA-412DD2D30745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAAF9CD3-62BD-4B7F-AA6D-4E984D7E877B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAF9CD3-62BD-4B7F-AA6D-4E984D7E877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAF9CD3-62BD-4B7F-AA6D-4E984D7E877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAF9CD3-62BD-4B7F-AA6D-4E984D7E877B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{901F3991-72D0-4728-AD6B-8A13CBF01006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{901F3991-72D0-4728-AD6B-8A13CBF01006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{901F3991-72D0-4728-AD6B-8A13CBF01006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{901F3991-72D0-4728-AD6B-8A13CBF01006}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23217C52-96BC-4CD3-ADFA-412DD2D30745} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{AAAF9CD3-62BD-4B7F-AA6D-4E984D7E877B} = {71B39C6D-941C-4D9C-B0E7-D7B92E5F4FA1}
+		{901F3991-72D0-4728-AD6B-8A13CBF01006} = {80FBEEE5-65B5-471D-BA3B-B394C1D4A7C0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B91F15FD-3F5B-4330-AAB9-47795AEF7695}
+	EndGlobalSection
+EndGlobal

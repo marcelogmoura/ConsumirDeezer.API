@@ -1,0 +1,6 @@
+@ConsumirDeezer.API_HostAddress = http://localhost:5215
+
+GET {{ConsumirDeezer.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
