@@ -38,7 +38,7 @@ O projeto segue uma estrutura modular com foco em responsabilidade:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [SEU_LINK_DO_REPOSITÓRIO]
+    git clone [https://github.com/marcelogmoura/ConsumirDeezer.API]
     cd ConsumirDeezer.API
     ```
 
