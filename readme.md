@@ -5,16 +5,19 @@
 [![Swagger](https://img.shields.io/badge/Swagger/OpenAPI-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# ConsumirDeezer.API (.NET Core)
+## ⚠️ Fonte dos Dados
 
-API RESTful desenvolvida em **ASP.NET Core 8** para atuar como um *proxy* entre o frontend e a API oficial do Deezer. Ela centraliza a lógica de integração, tratando as chamadas HTTP e o mapeamento de dados (DTOs).
+Este projeto consome dados da **API Simples (Open API) do Deezer**, conforme documentação disponível em [https://developers.deezer.com](https://developers.deezer.com).
+* Não é necessário um *token* de autenticação OAuth para os endpoints de busca e top tracks utilizados.
+* **Importante:** A contagem de reproduções (*streams*) por faixa **não é fornecida** pela API Simples para faixas individuais.
+
 
 ## 🚀 Tecnologias Utilizadas
 
 | Categoria | Tecnologia | Versão |
 | :--- | :--- | :--- |
 | Framework | ASP.NET Core | 8.0 |
-| Linguagem | C# | (Implicitamente moderna) |
+| Linguagem | C# |  |
 | Arquitetura | Domain/Infrastructure/API | Clean Separation |
 | API Externa | Deezer API | Integração via HttpClient |
 | DI/Config | Dependency Injection, CORS | Configuração em Program.cs |
@@ -63,6 +66,27 @@ A API expõe dois endpoints principais através do `ArtistsController.cs`:
 | :--- | :--- | :--- |
 | `GET` | `/api/artists/search/{artistName}` | Busca artistas por nome. |
 | `GET` | `/api/artists/{artistId}/top-tracks` | Retorna as Top 5 músicas de um artista (limit=3 configurado na infraestrutura). |
+
+---
+
+## 🖼️ Demonstração (Swagger)
+
+Abaixo estão os resultados dos testes realizados através da interface Swagger, demonstrando o funcionamento correto dos endpoints da API:
+
+### 1. Teste de Busca de Artista (`/api/artists/search/{artistName}`)
+Este teste verifica a comunicação com a API do Deezer para buscar artistas.
+
+![Teste de Busca de Artista no Swagger](https://i.postimg.cc/qq23PGY2/Screenshot-19.jpg)
+
+### 2. Teste de Top Tracks (`/api/artists/{artistId}/top-tracks`)
+Este teste simula a requisição para obter as Top Tracks de um artista (usando o ID retornado na busca).
+
+![Teste de Top Tracks no Swagger (Execução)](https://i.postimg.cc/nVq9c0Rb/Screenshot-20.jpg)
+
+### 3. Exemplo de Resposta de Top Tracks
+O JSON de resposta confirma o retorno dos dados formatados (título, duração, preview, etc.) do Top 5 do artista.
+
+![Exemplo de Resposta JSON no Swagger](https://i.postimg.cc/qRVBPddD/Screenshot-21.jpg)
 
 ---
 
