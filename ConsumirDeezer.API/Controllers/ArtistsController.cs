@@ -33,7 +33,6 @@ namespace ConsumirDeezer.Api.Controllers
             {
                 return NotFound($"Artista com ID {artistId} não encontrado."); 
             }
-
             return Ok(result);
         }
     }

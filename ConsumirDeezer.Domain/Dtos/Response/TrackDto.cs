@@ -33,5 +33,6 @@ namespace ConsumirDeezer.Domain.Dtos.Response
 
         [JsonPropertyName("cover_medium")]
         public string CoverMedium { get; set; }
+ 
     }
 }
